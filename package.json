@@ -22,6 +22,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5"
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "enzyme-to-json": "^3.6.2"
   }
 }
